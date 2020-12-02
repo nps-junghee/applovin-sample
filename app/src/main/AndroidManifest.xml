@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nps.adiscope.sampleapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="URhay2tKwCEd5D15ONJFui9Z7RfNKG0piiOemF-fSDHXRJdqhx3ZeD8mfo8-39omtAPcPOHscZO2t0sTyw7a8G" />
+
+        <activity
+            android:name="com.nps.adiscope.sampleapp.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nps.adiscope.sampleapp.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.max.InterstitialAdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName="com.nps.adiscope.sampleapp.MainActivity" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.max.RewardedAdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName="com.nps.adiscope.sampleapp.MainActivity" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.max.banner.BannerAdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Banners"
+            android:parentActivityName="com.nps.adiscope.sampleapp.MainActivity" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.max.banner.ProgrammaticBannerAdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName="com.nps.adiscope.sampleapp.MainActivity" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.max.banner.LayoutEditorBannerAdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName="com.nps.adiscope.sampleapp.MainActivity" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.max.mrecs.MrecAdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="MRECs"
+            android:parentActivityName="com.nps.adiscope.sampleapp.MainActivity" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.max.mrecs.LayoutEditorMrecAdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName="com.nps.adiscope.sampleapp.MainActivity" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.max.mrecs.ProgrammaticMrecAdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName="com.nps.adiscope.sampleapp.MainActivity" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.interstitials.InterstitialDemoMenuActivity"
+            android:label="@string/title_activity_interstitial_list" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.interstitials.InterstitialBasicIntegrationActivity"
+            android:label="@string/title_activity_interstitial_basic_integration" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.interstitials.InterstitialManualLoadingActivity"
+            android:label="@string/title_activity_interstitial_manual_loading" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.interstitials.InterstitialZoneActivity"
+            android:label="@string/title_activity_interstitial_zone_integration" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.rewarded.RewardedVideosDemoMenuActivity"
+            android:label="@string/title_activity_rewarded_videos_list" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.rewarded.RewardedVideosActivity"
+            android:label="@string/title_activity_rewarded_videos_basic_integration" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.rewarded.RewardedVideosZoneActivity"
+            android:label="@string/title_activity_rewarded_videos_zone_integration" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.banner.BannerDemoMenuActivity"
+            android:label="@string/title_activity_banner_list" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.banner.BannerProgrammaticActivity"
+            android:label="@string/title_activity_banner_programmatic" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.banner.BannerLayoutEditorActivity"
+            android:label="@string/title_activity_banner_layout_editor" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.banner.BannerZoneActivity"
+            android:label="@string/title_activity_banner_zone_integration" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.leaders.LeaderDemoMenuActivity"
+            android:label="@string/title_activity_leader_list" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.leaders.LeaderProgrammaticActivity"
+            android:label="@string/title_activity_leader_programmatic" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.leaders.LeaderLayoutEditorActivity"
+            android:label="@string/title_activity_leader_layout_editor" />
+        <activity
+            android:name="com.nps.adiscope.sampleapp.ads.applovin.eventtracking.EventTrackingActivity"
+            android:label="@string/title_activity_event_tracking" />
+    </application>
+</manifest>
